@@ -1,0 +1,28 @@
+set rae mitzi
+set faz chica
+
+rae head_left {
+    flow 0.5
+    rotate "head" y:-10
+}
+rae head_right {
+    flow 0.5
+    rotate "head" y:10
+}
+rae head_up {
+    flow 0.5
+    move "eyes" x:-1
+}
+rae eyes_left {
+    flow 0.5
+    move "eyes" z:-0.5
+}
+rae eyes_right {
+    flow 0.5
+    move "eyes" z:0.5
+}
+
+rae jaw {
+    flow 0.5
+    move "mouth" x:-2
+}

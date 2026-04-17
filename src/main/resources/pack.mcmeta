@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": ${minecraft_pack_format},
+        "description": "${addon_description}"
+    }
+}

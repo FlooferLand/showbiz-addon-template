@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"FlooferLand.showbiz",
+			"Oracle.oracle-java",
+			"redhat.java",
+			"vscjava.vscode-gradle",
+			"vscjava.vscode-java-debug"
+		]
+	},
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"explorer.excludeGitIgnore": false
+	}
+}

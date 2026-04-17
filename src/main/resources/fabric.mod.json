@@ -1,0 +1,15 @@
+{
+    "schemaVersion": 1,
+    "id": "${addon_namespace}",
+    "version": "${addon_version}",
+    "name": "${addon_display_name}",
+    "description": "${addon_description}",
+    "authors": ["${addon_authors}"],
+    "icon": "assets/${addon_namespace}/icon.png",
+    "environment": "*",
+    "depends": {
+        "minecraft": "~${minecraft_version}",
+        "showbiz": ">=${showbiz_version}",
+        "java": ">=21"
+    }
+}

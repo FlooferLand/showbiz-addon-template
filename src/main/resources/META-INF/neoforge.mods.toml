@@ -1,0 +1,12 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+showAsResourcePack = true
+
+[[mods]]
+modId = "${addon_namespace}"
+version = "${addon_version}"
+displayName = "${addon_display_name}"
+description = "${addon_description}"
+authors = "${addon_authors}"
+credits = "${addon_authors}"
+logoFile = "icon.png"

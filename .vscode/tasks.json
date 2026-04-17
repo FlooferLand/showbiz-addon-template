@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "showbiz-rebuild",
+			"script": "processResources",
+			"description": "Processes main resources.",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"project": "${workspaceFolderBasename}",
+			"buildFile": "${workspaceFolder}${/}build.gradle.kts",
+			"rootProject": "${workspaceFolderBasename}",
+			"projectFolder": "${workspaceFolder}",
+			"workspaceFolder": "${workspaceFolder}",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": ["$gradle"],
+			"label": "showbiz: rebuild"
+		},
+		{
+			"type": "gradle",
+			"id": "showbiz-install",
+			"script": "showbizInstall",
+			"description": "Installs the mod and it's dependencies",
+			"group": "build",
+			"project": "${workspaceFolderBasename}",
+			"buildFile": "${workspaceFolder}${/}build.gradle.kts",
+			"rootProject": "${workspaceFolderBasename}",
+			"projectFolder": "${workspaceFolder}",
+			"workspaceFolder": "${workspaceFolder}",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": ["$gradle"],
+			"label": "showbiz: install"
+		},
+		{
+			"type": "gradle",
+			"id": "showbiz-assemble",
+			"script": "assemble",
+			"description": "Builds out an addon",
+			"group": "build",
+			"project": "${workspaceFolderBasename}",
+			"buildFile": "${workspaceFolder}${/}build.gradle.kts",
+			"rootProject": "${workspaceFolderBasename}",
+			"projectFolder": "${workspaceFolder}",
+			"workspaceFolder": "${workspaceFolder}",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": ["$gradle"],
+			"label": "showbiz: assemble"
+		}
+	]
+}

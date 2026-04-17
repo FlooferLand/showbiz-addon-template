@@ -1,0 +1,9 @@
+[addon]
+id = "${addon_namespace}"
+name = "${addon_display_name}"
+authors = ["${addon_authors}"]
+version = "${addon_version}"
+description = '''
+    ${addon_description}
+'''
+format = 1

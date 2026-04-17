@@ -1,0 +1,5 @@
+[reely]
+name = "Reely"
+authors = ["FlooferLand"]
+accepts.rockafire = true
+accepts.fnaf1 = true
