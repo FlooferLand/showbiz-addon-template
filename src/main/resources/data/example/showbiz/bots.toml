@@ -1,3 +1,7 @@
+# This file defines the actual bots!
+# Add a new block like the one below for every new bot.
+# The bot ID ([reely] in this case) should be using "snake_case", as should everything.
+
 [reely]
 name = "Reely"
 authors = ["FlooferLand"]

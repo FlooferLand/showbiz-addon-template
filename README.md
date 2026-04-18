@@ -12,14 +12,20 @@ This project uses the VSCode IDE for the main part, which is a bit complicated a
 Some important things you need to know:
 - VSCode has a task system, which are little pieces of code that you can run at any time. You can trigger a task with `CTRL + T` _(or `Terminal -> Run Task`)_ and type its name there
 
+
 ## Setup
 
-1. Download this template as a zip and extract it
+1. [Download this template as a zip](https://github.com/FlooferLand/showbiz-addon-template/archive/refs/heads/main.zip) and extract it. _(if you're more familliar with Git, I recommend hitting the "Use this template" button and making a fork)_
 2. Download and install [VSCode](https://code.visualstudio.com/download)
 3. Open VSCode, and open the `ShowbizAddon.code-workspace` file from inside of that newly extracted folder via `File -> Open Workspace from File`
 4. Install the recommended extensions when it prompts you to do so in the bottom right _(you can see them and install them manually in the `ShowbizAddon.code-workspace` if it doesn't pop up for you)_
-5. Run the `showbiz: install` task in order to automatically install the Showbiz mod and it's dependencies into `run/`
-6. Head over to `Run` on the top and hit `Start Debugging` _(or simply press F5)_
+5. Open `gradle.properties` and replace all of the placeholders there with your addon's details, *this is mandatory*.
+    - Make sure your addon namespace is using `snake_case`. `My Addon` is not a valid namespace, however `my_addon` is. _(this is the same with folder names)_
+6. After setting up that info, make sure to rename the first folder inside the assets and data folders _(inside `src/main/resources/`)_ to your addon's namespace, for example instead of being `assets/example/..` it should be `assets/my_addon/..` _(but with the addon namespace you set earlier)_
+7. Run the `showbiz: install` task in order to automatically install the Showbiz mod and it's dependencies into `run/`
+8. Head over to `Run` on the top and hit `Start Debugging` _(or simply press F5)_
+
+Please read the [Showbiz documentation](https://github.com/FlooferLand/showbiz/wiki) for more information about addon creation.
 
 
 ## Reloading assets

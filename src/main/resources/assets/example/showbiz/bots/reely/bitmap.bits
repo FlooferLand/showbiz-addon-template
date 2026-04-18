@@ -1,3 +1,9 @@
+# This file defines which things should move based off the bits
+# "head_left" here is just a named bit, you can use actual bits via "105td" for instance.
+# Also, lines starting with '#' are ignored. Feel free to delete these!
+
+# Read the documentation on the bits format: https://github.com/FlooferLand/showbiz/wiki/Bitmap-format
+
 set rae mitzi
 set faz chica
 

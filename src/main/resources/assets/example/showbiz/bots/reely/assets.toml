@@ -1,2 +1,5 @@
+# This file defines texture and model variants,
+# however this is not yet implemented depending on the Showbiz version you're using
+
 [variants.default]
 texture = "reely"
