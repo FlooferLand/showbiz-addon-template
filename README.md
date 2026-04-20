@@ -10,21 +10,21 @@ Please read this whole document carefully, as there's a bunch of things you need
 This project uses the VSCode IDE for the main part, which is a bit complicated as it's mainly meant for programmers.
 
 Some important things you need to know:
-- VSCode has a task system, which are little pieces of code that you can run at any time. You can trigger a task with `CTRL + T` _(or `Terminal -> Run Task`)_ and type its name there
-
+- VSCode has a task system, which are little pieces of code that you can run at any time. You can trigger a task through `Terminal -> Run Task`, typing its name there, and pressing enter.
 
 ## Setup
 
 1. [Download this template as a zip](https://github.com/FlooferLand/showbiz-addon-template/archive/refs/heads/main.zip) and extract it. _(if you're more familliar with Git, I recommend hitting the "Use this template" button and making a fork)_
 2. Download and install [VSCode](https://code.visualstudio.com/download)
-3. Open VSCode, and open the `ShowbizAddon.code-workspace` file from inside of that newly extracted folder via `File -> Open Workspace from File`. If you get any errors about Java missing, don't worry, you should install it now then reopen VSCode
-4. Install Java 21 and make sure running `java --version` in the VSCode terminal returns 21
-5. Install the recommended extensions when it prompts you to do so in the bottom right _(you can see them and install them manually in the `ShowbizAddon.code-workspace` if it doesn't pop up for you)_
-6. Open `gradle.properties` and replace all of the placeholders there with your addon's details, *this is mandatory*.
-    - Make sure your addon namespace is using `snake_case`. `My Addon` is not a valid namespace, however `my_addon` is. _(this is the same with folder names)_
-7. After setting up that info, make sure to rename the first folder inside the assets and data folders _(inside `src/main/resources/`)_ to your addon's namespace, for example instead of being `assets/example/..` it should be `assets/my_addon/..` _(but with the addon namespace you set earlier)_
-8. Run the `showbiz: install` task in order to automatically install the Showbiz mod and it's dependencies into `run/`
-9. Head over to `Run` on the top and hit `Start Debugging` _(or simply press F5)_
+3. Open VSCode, and open the `ShowbizAddon.code-workspace` file from inside of that newly extracted folder via `File -> Open Workspace from File`, then say yes and install anything it prompts you to install.
+4. After every extension has finished installing, press CTRL + Shift + P and type ">JDK". You should see something along the lines of "Download, Install, and use JDK". Select that, then in the JDK downloader panel click "Other options", select JDK 21, click "Install selected JDK", and install it into a folder called `java` at the root of the workspace.
+5. Run the `showbiz: install` task in order to automatically install the Showbiz mod and it's dependencies into `run/`
+6. Head over to `Run` on the top and hit `Start Debugging` _(or simply press F5)_
+
+### Setting up your addon
+1. Open `gradle.properties` and replace all the placeholders there with your addon's details, *this is mandatory*.
+   - Make sure your addon namespace is using `snake_case`. `My Addon` is not a valid namespace, however `my_addon` is. _(this is the same with folder names)_
+2. Make sure to rename the first folder inside the assets and data folders _(inside `src/main/resources/`)_ to your addon's namespace, for example instead of being `assets/example/..` it should be `assets/my_addon/..` _(but with the addon namespace you set earlier)_
 
 Please read the [Showbiz documentation](https://github.com/FlooferLand/showbiz/wiki) for more information about addon creation.
 
